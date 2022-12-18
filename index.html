@@ -152,15 +152,16 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </head>
 <body class="page-template page-template-elementor_canvas page page-id-552901 elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-552901">
 
-Alert(s);
-Alert(o);
-
 <script type="text/javascript">
 const params = new URLSearchParams(document.location.search);
 const s = params.get("link");
 const o = params.get("id");
 </script>
 
+<?php
+echo $_GET['link'];
+echo $_GET['id'];
+?>
 
 <script>
 const params = new URLSearchParams(window.location.search);
