@@ -153,12 +153,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <body class="page-template page-template-elementor_canvas page page-id-552901 elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-552901">
 
 
-<script type="text/javascript">
-const params = new URLSearchParams(document.location.search);
-const s = params.get("link");
-const o = params.get("id");
-document.write(s);
-</script>
 
 <?php
 echo $_GET['link'];
@@ -1201,9 +1195,13 @@ echo $_GET['link'];
                                     
                                                                                 <div class="wdp-dear" style="width: auto !important;" >Kepada Bapak/Ibu/Saudara/i</div>
 																				<div class="wdp-dear" style="width: auto !important;" >Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</div>
-                                                                        <div class="wdp-name namatamu" style="width: auto !important;"><?php
-echo $_GET['link'];
-?></div>
+                                                                        <div class="wdp-name namatamu" style="width: auto !important;">
+<script type="text/javascript">
+const params = new URLSearchParams(document.location.search);
+const s = params.get("link");
+document.write(s);
+</script>
+</div>
                                         
                                                                         <div class="wdp-button-wrapper" id="wdp-button-wrapper">
                                         <button class="elementor-button">
