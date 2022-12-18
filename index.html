@@ -155,7 +155,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <script type="text/javascript">
 const params = new URLSearchParams(document.location.search);
 const s = params.get("ke");
-document.write(s);
 </script>
 
 <?php
@@ -1198,9 +1197,18 @@ echo $_GET['link'];
 
                                     
                                                                                 <div class="wdp-dear" style="width: auto !important;" >Kepada Bapak/Ibu/Saudara/i</div>
+<div class="wdp-dear" style="width: auto !important;" ><p id=#ke</p> </div>
+
 
 
 																				<div class="wdp-dear" style="width: auto !important;" >Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</div>
+<script type="text/javascript">
+const params = new URLSearchParams(document.location.search);
+const s = params.get("ke");
+document.write(s);
+document.querySelector("#ke").innerHTML(s);
+document.querySelector("#ke").data(s);
+</script>
                                                                         <div class="wdp-name namatamu" style="width: auto !important;"></div>
                                         
                                                                         <div class="wdp-button-wrapper" id="wdp-button-wrapper">
