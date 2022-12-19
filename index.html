@@ -1184,8 +1184,7 @@ echo $_GET['link'];
 <script type="text/javascript">
 const params = new URLSearchParams(document.location.search);
 const s = params.get("ke");
-document.write(s);
-document.write('<h3 style="text-align: center;">s</h3>');
+document.write('<h3 style="text-align: center;">' + s + '</h3>');
 document.querySelector("#to").innerHTML = s;
 document.querySelector("#to").data(s);
 </script>
