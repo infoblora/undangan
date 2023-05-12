@@ -1103,8 +1103,6 @@ echo $_GET['id'];
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Palanquin:100,400,700,900|Great+Vibes:100,400,700,900" rel="stylesheet">
 	<link href="https://wedew.id/combine/7d37895ab7e295116d51d2f6c5fc78bc-1682791473.css" rel="stylesheet">
-	<link href="https://wedew.id/combine/204df7442c6f45fefeb2ac51d91d1805-499162500.css" rel="stylesheet">
-	<link href="https://wedew.id/combine/d1e2e5151b3a3eb389233c317ee27b0c-1682791473.css" rel="stylesheet">
 </head>
 <body class="bg-image">
 	<div class="website-blocks has-cover">
@@ -1483,6 +1481,7 @@ echo $_GET['id'];
 				<use fill="rgb(187, 161, 144)" x="48" xlink:href="#gentle-wave" y="5"></use>
 				<use fill=" #c5afa0" x="48" xlink:href="#gentle-wave" y="7"></use>
 			</g></svg>
+            
 			<div class="container" id="ucapan">
 				<div class="row">
 					<div class="col-12">
@@ -1494,64 +1493,14 @@ echo $_GET['id'];
 					<div class="grid">
 						<div class="d-flex justify-content-center">
 							<div class="col-xl-8 col-lg-12">
-								<form>
-									<div class="row mt-2">
-										<div class="mb-3">
-											<input class="form-control border-0 shadow-sm" id="nama" name="nama" placeholder="Nama" type="text">
-										</div>
-										<div class="mb-3">
-											<textarea class="form-control border-0 shadow-sm" id="pesan" name="pesan" placeholder="Berikan Ucapan Dan Doa Restu" required="" rows="5"></textarea>
-										</div>
-										<div class="mb-3">
-											<select aria-label="Konfirmasi Kehadiran" class="form-select border-0 shadow-sm" id="status" name="status">
-												<option value="hadir">
-													Hadir
-												</option>
-												<option value="tidak hadir">
-													Tidak hadir
-												</option>
-											</select>
-										</div>
-										<div class="mb-3">
-											<input class="btn btn-default font-two fw-bold" id="submit" type="button" value="Submit">
-										</div>
-									</div>
-								</form>
+								
+								<div class="embed-responsive embed-responsive-1by1">
+									<iframe class="embed-responsive-item" src="https://infocepu.github.io/undangan.github.io/"></iframe>
+								</div>
 								<div class="embed-responsive embed-responsive-4by3">
 									<iframe class="embed-responsive-item" src="https://zejiaisna.000webhostapp.com/baru.php"></iframe>
 								</div>
-								<script>
-								$(document).ready(function() {
-
-								    $("#submit").click(function() {
-
-								        var nama = $("#nama").val();
-								        var pesan = $("#pesan").val();
-								        var status = $("#status").val();
-
-								    
-
-								        $.ajax({
-								            type: "POST",
-								            url: "https://zejiaisna.000webhostapp.com/store.php",
-								            data: {
-								                nama: nama,
-								                status: status,
-								                pesan: pesan,
-								            },
-								            cache: false,
-								            success: function(data) {
-								              //  alert(data);
-								           //   $('.tampildata').load("store.php");
-								              $('#tablekui').html(data);
-								              location.reload();
-								            }
-								        });
-								         
-								    });
-
-								});
-								</script>
+							
 							</div>
 						</div>
 					</div>
@@ -1684,9 +1633,5 @@ echo $_GET['id'];
 	</div>
 	<script src="https://wedew.id/combine/7c4639ab1923047e45952ca6542e68db-1682791473.js">
 	</script> 
-	<script src="https://wedew.id/combine/6721cbb564b99808414ce0192dc31991-1682791473.js">
-	</script> 
-	<script src="https://wedew.id/combine/495d426222307013202c1ac5bef608f2-499162500.js">
-	</script>
 </body>
 </html>
